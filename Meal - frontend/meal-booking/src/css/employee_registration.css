@@ -1,0 +1,72 @@
+
+.employee-form-container {
+  background-color: rgb(241, 192, 192);
+  padding: 35px;
+  width: 650px;
+  margin: 20px auto;
+  margin-top: 100px;
+  /* Center the form horizontally */
+  border: 5px dashed black;
+  border-radius: 20px;
+  overflow: auto;
+  height: calc(100vh - 300px);
+}
+
+
+/* Header styles */
+.employee-form-container h1 {
+  margin: 20px 0;
+
+  /* Adjust top and bottom margin */
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Form group styles */
+.form-group label {
+  text-align: left;
+  display: block;
+  font-size: 21px;
+  margin-bottom: 5px;
+  color: black;
+}
+
+/* Input and select styles */
+.form-group input,
+form-group select {
+  width: 100%;
+  padding: 8px;
+  font-size: 21px;
+  font-family: Arial;
+  margin-bottom: 7px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 10px;
+  height: 50px;
+}
+
+/* Button styles */
+.employee-form-container button {
+  background-color: #2471A3;
+  color: white;
+  padding: 10px 15px;
+  width: 120px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-left: 34%;
+}
+
+/* Button hover styles */
+.employee-form-container button:hover {
+  background-color: #CD6155;
+}
+
+/* Media Query for responsiveness */
+@media screen and (max-width: 600px) {
+  .employee-form-container {
+    width: 90%;
+    /* Adjust the width for smaller screens */
+  }
+}

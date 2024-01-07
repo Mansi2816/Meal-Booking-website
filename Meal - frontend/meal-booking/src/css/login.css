@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.login-page {
+  display: flex;
+  flex-wrap: wrap;
+  /* Allow items to wrap to the next line */
+  height: 100vh;
+}
+
+.image-container {
+  flex: 3 1;
+  /* 75% width for image */
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(45deg, #0000002e, #00000042), url('../images/meal/meal1.jpg');
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.login-form {
+  flex: 1.2;
+  /* 25% width for form */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  margin: 10px;
+  background-color: #fbb
+}
+
+.login-form h1 {
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+label {
+  margin-top: 10px;
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+input {
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.login-form button {
+  margin-top: 20px;
+  margin-left: 25%;
+  width: 50%;
+  background-color: #E23E3F;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 768px) {
+
+  /* Adjust layout for mobile devices */
+  .image-container {
+    flex: 1;
+    /* 100% width for image on small screens */
+    order: 2;
+    /* Reorder image below the form on small screens */
+  }
+
+  .login-form {
+    flex: 1;
+    /* 100% width for form on small screens */
+    padding: 10px;
+    order: 1;
+    /* Reorder form above the image on small screens */
+  }
+}
+
+.logo-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px !important;
+  margin-right: 7px;
+}
+
+.logo-wrapper img {
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
+}
+
+.logo-wrapper span {
+  color: #E23E3F;
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 7px;
+}
+
+#forgot {
+
+  color: rgb(0 32 92);
+  text-decoration: none;
+  font-size: 18px;
+  font-family: sans-serif;
+  font-weight: 600;
+  text-align: right;
+  margin-top: 10px;
+}

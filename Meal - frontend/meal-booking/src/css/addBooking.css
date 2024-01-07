@@ -1,0 +1,114 @@
+.backadd {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.booking-container {
+  width: 80%;
+  /* Use percentage for better responsiveness */
+  max-width: 600px;
+  /* Set a maximum width to avoid stretching on larger screens */
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  background-color: rgb(241, 192, 192);
+  margin-top: 80px;
+}
+
+.booking-type,
+.date-picker,
+.department-search,
+.employee-table,
+.notes {
+  margin-bottom: 20px;
+}
+
+.booking-container label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: black;
+  font-size: 20px;
+}
+
+select,
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 10px;
+}
+
+.react-datepicker__input-container input {
+  border: none;
+  border-radius: 10px;
+}
+.react-datepicker-wrapper{
+  width: 100%;
+}
+
+.booking-type select {
+  margin-top: 10px;
+  height: 50px
+}
+
+.department-search input {
+  border: none;
+  border-radius: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+table th,
+table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+table th {
+  background-color: #f2f2f2;
+}
+
+.booking-container button {
+  background-color: #2471A3;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 40%;
+  /* Adjusted for better centering */
+}
+
+.booking-container button:hover {
+  background-color: #CD6155;
+}
+
+.notes textarea {
+  resize: none;
+}
+
+/* Media Queries for responsiveness */
+@media only screen and (max-width: 768px) {
+  .booking-container {
+    width: 90%;
+    /* Adjusted for smaller screens */
+  }
+
+  .booking-container button {
+    margin-left: 0;
+    /* Center button on smaller screens */
+  }
+}

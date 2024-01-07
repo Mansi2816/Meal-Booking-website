@@ -1,0 +1,47 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  margin-bottom: 0px;
+  position: fixed;
+  bottom: 0%;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  /* Add padding for better spacing */
+}
+
+.center {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 auto;
+  /* Center the text */
+}
+
+.right {
+  display: flex;
+}
+
+.icon {
+  font-size: 1.5em;
+  margin: 0 5px;
+  /* Adjust margin for better spacing on smaller screens */
+  color: #fff;
+}
+
+.footer .right a {
+  margin-right: 15px;
+}
+
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+  .center {
+    margin: 0;
+    /* Remove left margin on smaller screens */
+  }
+
+}

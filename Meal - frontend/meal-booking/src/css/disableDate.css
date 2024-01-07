@@ -1,0 +1,75 @@
+.backDisable {
+  height: 700px;
+}
+
+.container {
+  height: 450px;
+  width: 80%;
+  /* Use percentage for width to make it responsive */
+  max-width: 400px;
+  /* Set a maximum width to prevent it from getting too wide on larger screens */
+  margin: 40px auto;
+  margin-top: 100px;
+  background-color: rgb(241, 192, 192);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: black;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: black;
+  margin-bottom: 7px;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  height: 50px;
+  outline: none;
+  background-color: #fff
+}
+
+.disableDatebtn button {
+  background-color: #2471A3;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 20px;
+  margin-left: 30%;
+}
+
+button:hover {
+  background-color: #CD6155;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 600px) {
+  .container {
+    width: 90%;
+    /* Adjust width for smaller screens */
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  button {
+    margin-left: 0;
+    /* Center the button on smaller screens */
+  }
+}

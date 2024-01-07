@@ -1,0 +1,110 @@
+/* Default styles */
+.backlist {
+  height: 700px;
+}
+
+.disableDateList {
+  width: 80%;
+  /* Use percentage for responsiveness */
+  max-width: 600px;
+  /* Set a maximum width */
+  margin: 50px auto;
+  margin-top: 100px;
+  padding: 20px;
+  background-color: rgb(241, 192, 192);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  justify-content: center;
+}
+
+.disableDateList h2 {
+  color: black;
+  text-align: left;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table,
+th,
+td {
+  border: 2px solid #ddd;
+  margin-bottom: 300px;
+  font-size: large;
+}
+
+table,
+tr {
+  background-color: yellowgreen;
+  border-radius: 20px;
+
+}
+
+.disableDateList th,
+td {
+  padding: 12px;
+  text-align: center;
+}
+
+thead {
+  background-color: #f2f2f2;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+h2 {
+  margin-top: 20px;
+  color: #333;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: black;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.disableDateList button {
+  background-color: #2471A3;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-left: 50%;
+  /* Adjusted for better centering */
+  transform: translateX(-50%);
+  /* Center the button */
+}
+
+.disableDateList button:hover {
+  background-color: #CD6155;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 600px) {
+  .disableDateList {
+    width: 90%;
+    /* Adjust width for smaller screens */
+  }
+
+  .disableDateList button {
+    margin-left: 0;
+    /* Reset margin for better centering */
+    width: 100%;
+    /* Make button full width */
+    transform: translateX(0);
+    /* Reset transform for button centering */
+  }
+}
